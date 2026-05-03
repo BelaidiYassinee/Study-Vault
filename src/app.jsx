@@ -1,4 +1,10 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import { createClient } from "@supabase/supabase-js";
+
+const supabase = createClient(
+  "https://nmxzbqiytrruuwwsqdvsq.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5teHpicWl5dHJydXd3c3FkdnNxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc3NTMyMTcsImV4cCI6MjA5MzMyOTIxN30.EjL0tkD51HanikKYhqjL4PHlrcnHGoZ_0xqysBdSHxw"
+);
 
 const COLORS = {
   cream: "#F5F0E8",
